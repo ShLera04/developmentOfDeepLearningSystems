@@ -21,21 +21,41 @@
 ## 3. Результаты инференса
 После завершения инференса в консоли отобразится статус "Инференс завершен успешно", в папке проекта обновится файл в директории results/, содержащий предсказанные параметры помещения, автоматически запустится тест сравнения полученных результатов с эталонными.
 
+
+
 atlanta-net-inference  | Инференс завершен успешно
+
 atlanta-net-inference  | 
+
 atlanta-net-inference  | Запуск теста сравнения JSON файлов...
+
 atlanta-net-inference  | -----------------------------------------
+
 atlanta-net-inference  | Сравнение JSON файлов...
+
 atlanta-net-inference  | Файл 1: results/demo.json
+
 atlanta-net-inference  | Файл 2: results/test.json
+
 atlanta-net-inference  | 
+
 atlanta-net-inference  | Структура JSON совпадает
+
 atlanta-net-inference  | Ошибок не найдено
+
 atlanta-net-inference  | JSON файлы полностью совпадают
+
 atlanta-net-inference  | 
+
 atlanta-net-inference  | =========================================
+
 atlanta-net-inference  | Все задачи выполнены успешно!
+
 atlanta-net-inference  | =========================================
+
 atlanta-net-inference  | 
+
 atlanta-net-inference  | Результаты инференса сохранены в папку results/
+
 atlanta-net-inference  | Файлы: demo.json и test.json
+

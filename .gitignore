@@ -1,8 +1,6 @@
 ckpt/
-results/
 .vs/
 __pycache__/
 misc/__pycache__/
-data/
 .venv/
 venv/
