@@ -10,6 +10,7 @@
 * **Программное обеспечение**: 
     * Docker Desktop (используемая версия 4.67.0) https://www.docker.com/products/docker-desktop/
     * WSL2 Backend (рекомендуется дистрибутив Ubuntu)
+* VPN (для скачивания весов предобученной модели)
 
 ## 2. Инструкция по запуску
 * Склонировать данный репозиторий с использованием команды
@@ -21,7 +22,7 @@
 * Создать папку **ckpt**
   ```powershell
   mkdir ckpt
-* Скачать веса модели **resnet101_atlantalayout.pth** https://vicserver.crs4.it/atlantanet/, переместить их в папку **ckpt**.
+* Скачать веса модели **resnet101_atlantalayout.pth** https://vicserver.crs4.it/atlantanet/, нужен vpn для скачивания, переместить их в папку **ckpt**.
 * Запустить приложение **Docker Desktop**
 * Место для хранения образов Docker можно изменить следующим образом. В приложении **Docker Desktop** перейти по вкладкам **Settings -> Resources -> Advanced -> Disk image location**, затем выбрать нужное место для хранения образов Docker.
 * Выполнить сборку образа с использование команды
