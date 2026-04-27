@@ -6,7 +6,7 @@
 
 Для корректного запуска проекта необходимо:
 * **Операционная система**: Windows 10/11 с поддержкой WSL2 (Windows Subsystem for Linux).
-* **Свободное место**: не менее **60 ГБ** на диске (рекомендуется использовать диск `D:` для хранения образов Docker).
+* **Свободное место**: не менее **60 ГБ** на диске
 * **Программное обеспечение**: 
     * Docker Desktop (используемая версия 4.67.0) https://www.docker.com/products/docker-desktop/
     * WSL2 Backend (рекомендуется дистрибутив Ubuntu)
@@ -14,7 +14,7 @@
 ## 2. Инструкция по запуску
 * Склонировать данный репозиторий с использованием команды
   ```powershell
-  git clone <ссылка на репозиторий>
+  git clone https://github.com/ShLera04/developmentOfDeepLearningSystems.git
 * Перейти в папку
   ```powershell
   cd developmentOfDeepLearningSystems
@@ -23,7 +23,7 @@
   mkdir ckpt
 * Скачать веса модели **resnet101_atlantalayout.pth** https://vicserver.crs4.it/atlantanet/, переместить их в папку **ckpt**.
 * Запустить приложение **Docker Desktop**
-* В случае, если места на диске `С:` мало, необходимо использовать диск `D:` для хранения образов Docker. Это можно сделать следующим образом. В приложении **Docker Desktop** перейти по вкладкам **Settings -> Resources -> Advanced -> Disk image location**, затем выбрать нужное место для хранения образов Docker.
+* Место для хранения образов Docker можно изменить следующим образом. В приложении **Docker Desktop** перейти по вкладкам **Settings -> Resources -> Advanced -> Disk image location**, затем выбрать нужное место для хранения образов Docker.
 * Выполнить сборку образа с использование команды
     ```powershell
     docker-compose build
@@ -52,3 +52,11 @@ atlanta-net-inference  | =========================================
 atlanta-net-inference  | 
 atlanta-net-inference  | Результаты инференса сохранены в папку results/
 atlanta-net-inference  | Файлы: demo.json и test.json
+```
+## 4. Дополнительные команды
+* запуск временного контейнера
+  ``` powershell
+  docker-compose run --rm atlanta-net bash
+* извлечение файлов
+  ``` powershell
+  docker cp atlanta-net-inference:/app/results/. ./results_from_docker
